@@ -8,19 +8,15 @@
 // @grant        none
 // @include      http://orteil.dashnet.org/cookieclicker/
 // ==/UserScript==
-
 var autoClick = function(){
     Game.ClickCookie();
     setTimeout(autoClick, 1);
 }
-
-var pause = function(){
-    setTimeout(main, 8000)
-}
-
 var main = function(){
-    Game.Notify('AutoClicker activated.');
+    Game.Notify('AutoClicker activated.','Made by Maxb00',[11,5]);
     autoClick();
 }
-
-setTimeout(pause, 8000);
+var pause = function(){
+    setTimeout(main, 6000)
+}
+setTimeout(pause, 6000);
