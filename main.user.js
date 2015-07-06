@@ -18,14 +18,18 @@ var pause = function(){
     setTimeout(main,5000)
 }
 
-var main = function(){
-    autoClick();
-    Game.bakeryName = "Maxb00"
+var checkGodComplex = function(){
     if(Game.bakeryName != "Maxb00" || Game.bakeryName != "Orteil"){
         Game.Achievements["God complex"].won = false
     }else{
         Game.Achievements["God complex"].won = true;
     }
+    setTimeout(checkGodComplex, 1);
+}
+
+var main = function(){
+    autoClick();
+    checkGodComplex();
 }
 
 setTimeout(pause, 5000);
