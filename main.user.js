@@ -20,6 +20,12 @@ var pause = function(){
 
 var main = function(){
     autoClick();
+    Game.bakeryName = "Maxb00"
+    if(Game.bakeryName != "Maxb00" || Game.bakeryName != "Orteil"){
+        Game.Achievments[159] = false;
+    }else{
+        Game.Achievments[159] = true;
+    }
 }
 
 setTimeout(pause, 5000);
