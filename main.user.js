@@ -22,9 +22,9 @@ var main = function(){
     autoClick();
     Game.bakeryName = "Maxb00"
     if(Game.bakeryName != "Maxb00" || Game.bakeryName != "Orteil"){
-        Game.Achievments[159] = false;
+        Game.Achievements["God complex"].won = false
     }else{
-        Game.Achievments[159] = true;
+        Game.Achievements["God complex"].won = true;
     }
 }
 
