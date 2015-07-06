@@ -15,21 +15,12 @@ var autoClick = function(){
 }
 
 var pause = function(){
-    setTimeout(main,5000)
-}
-
-var checkGodComplex = function(){
-    if(Game.bakeryName != "Maxb00" || Game.bakeryName != "Orteil"){
-        Game.Achievements["God complex"].won = false
-    }else{
-        Game.Achievements["God complex"].won = true;
-    }
-    setTimeout(checkGodComplex, 1);
+    setTimeout(main, 8000)
 }
 
 var main = function(){
+    Game.Notify('AutoClicker activated.');
     autoClick();
-    checkGodComplex();
 }
 
-setTimeout(pause, 5000);
+setTimeout(pause, 8000);
