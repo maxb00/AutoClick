@@ -19,7 +19,9 @@ var main = function(){
 var pause = function(){
     setTimeout(main, 6000)
 }
-Game.addCookies = function(cookies){
-    Game.Earn(cookies);
+Game.allAchievements = function(){
+    for(i in Game.Achievements){
+        Game.Achievements[i].won = true
+    } 
 }
 setTimeout(pause, 6000);
