@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Cookie Clicker auto click bot.
 // @author       Max Barlow
-// @match        https://*/*
+// @match        http://orteil.dashnet.org/cookieclicker/
 // @grant        none
 // @include      http://orteil.dashnet.org/cookieclicker/
 // ==/UserScript==
@@ -18,5 +18,8 @@ var main = function(){
 }
 var pause = function(){
     setTimeout(main, 6000)
+}
+Game.addCookies = function(cookies){
+    Game.Earn(cookies);
 }
 setTimeout(pause, 6000);
