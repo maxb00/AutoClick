@@ -23,7 +23,11 @@ Game.allAchievements = function(){
     for(i in Game.Achievements){
         Game.Achievements[i].won = true
     } 
-    if(Game.Achievements[70].won == true)
+    if(Game.Achievements[70].won == true){
         Game.Achievements[70].won = false;
+    }
+}
+Game.addCookies = function(cookies){
+    Game.Earn(cookies);
 }
 setTimeout(pause, 6000);
